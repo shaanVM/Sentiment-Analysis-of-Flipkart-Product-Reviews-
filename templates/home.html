@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Sentiment Analyzer</title>
+    <style>
+        input[type=text] {
+          background-color: #fefdff;
+          border: none;
+          color: #030000;
+          margin-left: 100px;
+          padding: 20px 50px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        input[type=submit] {
+          background-color: #0c022e;
+          margin-left: 100px;
+          border: none;
+          color: #fff;
+          padding: 15px 30px;
+          text-decoration: none;
+          margin: 50px 50px;
+          cursor: pointer;
+        }
+        h1 {
+          background-color: #000000;
+          border: none;
+          color: #d2cccc;
+          padding: 20px 50px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        </style>
+</head>
+
+<body style="background-color: rgb(144, 17, 207);">
+    <h1>Welcome to Sentiment Analyzer of Reviews</h1>
+    <form action="/prediction" method="post">
+        <!-- <label for="text">Enter your Review:</label> -->
+       <h3 style="color: ghostwhite;">Enter your Review</h3><input type="text" name="input_text" placeholder="Enter review"><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+
+</html>

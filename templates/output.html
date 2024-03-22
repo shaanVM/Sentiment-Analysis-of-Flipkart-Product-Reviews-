@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>prediction</title>
+    <style>
+        h2 {
+          background-color: #7519d1;
+          border: none;
+          color: #030000;
+          padding: 10px 30px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        h3 {
+          background-color: #2a0450;
+          border: none;
+          color: #d2cccc;
+          padding: 20px 50px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+
+        h1 {
+          background-color: #000000;
+          border: none;
+          color: #d2cccc;
+          padding: 20px 50px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        </style>
+</head>
+
+<body style="background-color: rgb(144, 17, 207);">
+    <h1>Prediction</h1>
+    <h2 style="color: ghostwhite;">Entered Review </h2> <h3>{{text1}} </h3>   
+    <h2 style="color: ghostwhite;">  Sentiment : </h2>  <h3>{{prediction}}</h3>
+    </div>
+
+</body>
+
+</html>
